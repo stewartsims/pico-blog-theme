@@ -22,4 +22,8 @@ This blog theme implements:
 2. Copy the `pagination.php` file to the `plugins` folder
 3. Enable the Pico Blog theme in your `config.php` file: `$config['theme'] = 'default-blog';` (you can find that file in your `config` folder)
 
+## To Do
+
+* add pagination on post pages
+* add date on post pages
 
