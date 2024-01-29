@@ -52,7 +52,7 @@
                                 </p>
                                  <p class="excerpt">{{ page.content }}</p>
                             </a>
-                            <p class="post-meta">Posted by {{ page.author }} on {{ page.date }}</p>
+                            <p class="post-meta">Posted by {{ page.author }} on {{ page.date|date(config.post_date_format ? config.post_date_format : "jS F Y") }}</p>
                         </div>
                       
                     {% endfor %}
