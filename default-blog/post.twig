@@ -36,8 +36,10 @@
     </header>
 
   <section id="content">
-        <p class="date">{{ page.date_formatted }}</p>
         <div class="inner">
+            {%  if meta.date %}
+                <p class="date">Posted on {{ meta.date|date(config.post_date_format ? config.post_date_format : "jS F Y") }}</p>
+            {% endif %}
             {{ content }}
         </div>
     </section>
